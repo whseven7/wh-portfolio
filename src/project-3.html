@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>William Herman | Software Engineer</title>
+    <meta name="description" content="William Herman | Software Engineer" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.scss" />
+    <script
+      defer
+      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="top"></div>
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <!-- As a link -->
+          <a class="d-flex justify-content-start navbar-brand" href="index.html"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-arrow-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+              />
+            </svg>
+          </a>
+          <h2 class="section-title dark-blue-text">Project</h2>
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">
+                Simple Personal Dashboard
+              </h3>
+              <h3 class="project-wrapper__text-title">Overview</h3>
+              <div>
+                <p class="mb-4">
+                  React Responsive Personal Dashboard with Quotes of the day
+                  Widget, News Widget to get the news based on the keyword
+                  searched, Weather Widget to see the temperature in different
+                  city, and Task Manager for to do list saved on LocalStorage.
+                  Implementing different API for each widget NewsAPI for the
+                  news widget which implemented using Express JS to host the
+                  serverless function site to fetch the API, OpenWeatherMap API
+                  for the weather widget, Quotable API for the Quotes of the
+                  day.
+                </p>
+              </div>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                class="cta-btn cta-btn--hero"
+                href="https://personal-dashboard-rho.vercel.app/"
+              >
+                See Live
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                class="cta-btn text-color-main"
+                href="https://github.com/whseven7/personal-dashboard"
+              >
+                Source Code
+              </a>
+            </div>
+          </div>
+
+          <div class="project-wrapper__image load-hidden">
+            <div>
+              <p class="mb-4">
+                Main Tech Stack Used: React, Express.JS, BootStrap, NewsAPI,
+                OpenWeatherAPI, QuotableAPI
+              </p>
+            </div>
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="2"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="3"
+                ></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    class=""
+                    src="assets/personal-dashboard/qotd.png"
+                    alt="First slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class=""
+                    src="assets/personal-dashboard/news.png"
+                    alt="Second slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class=""
+                    src="assets/personal-dashboard/task-manager.png"
+                    alt="Third slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class=""
+                    src="assets/personal-dashboard/weather.png"
+                    alt="Forth slide"
+                  />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/william-herman-4025761b8/"
+            target="_blank"
+          >
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a>
+          <a
+            rel="noreferrer"
+            href="https://github.com/whseven7"
+            target="_blank"
+          >
+            <i class="fa fa-github fa-inverse"></i>
+          </a>
+        </div>
+
+        <hr />
+
+        <p class="footer__text">© 2024 - William Herman</p>
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+
+    <script defer type="module" src="index.js"></script>
+  </body>
+</html>
